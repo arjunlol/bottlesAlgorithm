@@ -27,8 +27,10 @@ function calcBottlesBack (bottlesPurchased, bottlesEmpty, bottlesCaps){
 
 var money = process.argv[2];
 console.log(calcBottlesBack(Math.floor(money/2), 0, 0));
-console.log(bottlesPurchased2, bottlesFromRecycling, bottlesFromCaps);
-console.log(leftOverCaps,leftOverBottles)
+console.log("You have purchased ",bottlesPurchased2, " bottles",
+  "\n", bottlesFromRecycling, " bottles were from recycling bottles", "\n", bottlesFromCaps,
+  " from recycling bottle caps");
+console.log("You have ", leftOverCaps, " caps and " ,leftOverBottles, " bottles leftover");
  //  var bottlesBought = Math.floor(investment/2);
  //  var bottlesBack = Math.floor(bottlesBought/2);
  //  // if (bottlesBack >= 0){
